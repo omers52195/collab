@@ -11,15 +11,12 @@ header {
 	background-repeat: no-repeat;
 }
 
-/* modified */
 nav {
 	text-align: center;
 	background-color:#666666;
-	/* padding: 1em; */
 	border-bottom: 1px Solid #000000;
 }
 
-/* modified */
 nav ul {
 	list-style-type: none; 
 	display: flex;
@@ -29,18 +26,12 @@ nav ul {
 	text-align: center;
 }
 	
-/* modified */
 nav li {
 	width: 100%;
 	border: 1px solid #000000;
-	
-
 }
 
-/* modified */
 nav a {
-	/* text-align: center; */
-	/* border-right: 1px solid #000000; */
 	padding: 20px;
 	text-decoration: none;
 	color: #ffffff;
@@ -54,12 +45,12 @@ h1, h2, h3 {
 	padding-top: 1em;
 }
 
-p {
+/* modified */
+p, .indexPageList, .address {
 	padding-left: 4em;
 	padding-right: 4em;
 }
 
-/* added */
 footer {
 	background-color: #a00909;
 	font-size: 80%;
@@ -69,19 +60,16 @@ footer {
 	padding: 1em
 }
 
-/* added */
 footer a {
 	color: #ffffff;
 }
 
-/* modified */
 #wrapper {
 	background-color: #ffffff;
-	/* min-width: 1200px; */ /* min-width was interfering with mobile view so i commented it out */
 	max-width: 1480px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 100%; /* changed width from 60% to 100% */
+	width: 100%;
 	border: 1px solid #000000;	
 }
 
@@ -118,24 +106,24 @@ footer a {
 }
 
 /* added */
+hr {
+	margin: 2em 4em;
+}
+
 #mobile {display: none; }
 #desktop {display: inline; }
 	
 /* Media Query For Mobile Styles*/
 @media only all and (max-width: 768px) {
 
-	/* added */
 	#wrapper {
 		padding: 10px -10px;
 	}
 
-	/* added */
 	nav ul {
 		flex-direction: column;
-
 	}
 
-	/* added */
 	.flex-container {
 		flex-direction: column;
 		margin-left: 1em;
@@ -144,7 +132,6 @@ footer a {
 		padding-right: 0;
 	}
 
-	/* added */
 	.box {
         width: 100%;
         height: 100%;
@@ -153,13 +140,20 @@ footer a {
         margin-bottom: 2em;
 	}
 
-	/* added */
-	p {
+	/* modified */
+	p, .indexPageList, .address {
 		padding-left: 1em;
 		padding-right: 1em;
 	}
-	
+
 	/* added */
+	hr {
+		margin: 2em 1em;
+	}
+	
 	#mobile {display: inline; }
-	#desktop {display: none; }
+	#desktop {display: none; }	
 }
+
+
+
